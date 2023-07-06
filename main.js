@@ -8,7 +8,7 @@ let y = (zoomContainer.offsetHeight / 100) * zoom;
 imgContainer.addEventListener('mousemove', (e) => {
   zoomContainer.style.visibility = "visible";
   zoomContainer.style.backgroundImage = getComputedStyle(imgContainer).backgroundImage;
-  zoomContainer.style.backgroundPositionX = -e.offsetX * x + "px"
+  zoomContainer.style.backgroundPositionX = -e.offsetX + 50 * x + "px"
   zoomContainer.style.backgroundPositionY = -e.offsetY * y + "px";
   zoomContainer.style.backgroundSize = imgContainer.offsetWidth * x + "px " + imgContainer.offsetHeight * y + "px";
 });
