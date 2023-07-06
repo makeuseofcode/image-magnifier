@@ -1,5 +1,3 @@
-import './style.less'
-
 let imgContainer = document.querySelector(".image-container");
 let zoomContainer = document.querySelector(".zoom-container");
 let zoomInput = document.querySelector(".zoom-slider");
@@ -25,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 zoomInput.addEventListener("input", () => {
   zoomLevelText.textContent = zoomInput.value;
-  zoom = 1.5 * zoomLevelText.textContent;
+  zoom = 1.5 * zoomInput.value;
   x = (zoomContainer.offsetWidth / 140) * zoom;
   y = (zoomContainer.offsetHeight / 100) * zoom;
 })
