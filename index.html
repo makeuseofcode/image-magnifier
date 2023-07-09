@@ -8,24 +8,16 @@
   </head>
 
   <body>
-    <div id="app">
+    <div class="header">
       <h1>Image Magnifier</h1>
-      <div class="zoom-level">
-        <label for="slider">Zoom Level</label>
-        <input
-          type="range"
-          class="zoom-slider"
-          name="slider"
-          value="1"
-          min="1"
-          max="5"
-        />
-        <span></span>
-      </div>
-      <div class="container">
-        <div class="image-container"></div>
-        <div class="zoom-container"></div>
-      </div>
+      <span
+        >Press <strong>Arrow Up</strong> or <strong>Arrow Down</strong> to
+        increase or decrease athe zoom level.
+      </span>
+      <span>Zoom Level: <strong class="zoom-level">1</strong></span>
+    </div>
+    <div class="container">
+      <div class="magnifier hidden"></div>
     </div>
     <script src="/main.js"></script>
   </body>
