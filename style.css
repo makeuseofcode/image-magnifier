@@ -1,6 +1,6 @@
 :root {
-    --magnifer-width: 150;
-    --magnifer-height: 150;
+    --magnifier-width: 150;
+    --magnifier-height: 150;
   }
   
   body {
@@ -23,8 +23,8 @@
     border-radius: 400px;
     box-shadow: 0px 11px 8px 0px #0000008a;
     position: absolute;
-    width: calc(var(--magnifer-width) * 1px);
-    height: calc(var(--magnifer-height) * 1px);
+    width: calc(var(--magnifier-width) * 1px);
+    height: calc(var(--magnifier-height) * 1px);
     cursor: none;
     background-image: url("https://cdn.pixabay.com/photo/2019/03/27/15/24/animal-4085255_1280.jpg");
     background-repeat: no-repeat;
